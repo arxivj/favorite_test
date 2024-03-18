@@ -7,7 +7,7 @@ class LikesController extends GetxController {
     if (likesMap.containsKey(ticker)) {
       likesMap[ticker] = !likesMap[ticker]!;
     } else {
-      likesMap[ticker] = false;
+      likesMap[ticker] = true;
     }
     update();
   }

@@ -77,7 +77,6 @@ class _FavoriteTestPageState extends State<FavoriteTestPage> {
 
       for (var ticker in aiProviderTicker) {
         bool isLiked = likesController.isLiked(ticker);
-        // LikeController 인스턴스 생성 및 초기 좋아요 상태 설정
         controllers[ticker] = LikeController(ticker, isLiked);
       }
 
